@@ -1,0 +1,30 @@
+{
+    "name": "gcodetec/phpcommon",
+    "description": "Little package with some functions and classes for productivity",
+    "require": {
+        "php": "^5.3.3 || ^7.0",
+        "league/csv": "^8.0",
+        "airmanbzh/php-html-generator": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0|~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gcodetec\\Common\\": "src/Gcodetec/Common"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\": "test/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "master"
+        }
+    }
+}
